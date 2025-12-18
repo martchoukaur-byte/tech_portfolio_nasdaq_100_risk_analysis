@@ -187,6 +187,19 @@ The following table consolidates risk statistics computed using three methodolog
 - Historical ES and VaR are more severe than parametric/Monte Carlo ES and VaR, indicating empirical returns exhibit fatter tails than normal distribution assumptions
 ---
 
+
+| Asset    | Max_Gap_Months | Date_Start | Date_End   |
+|----------|----------------|-----------|-----------|
+| Portfolio| 89             | 2000-03-01| 2007-08-01|
+| NASDAQ   | 177            | 2000-02-01| 2014-11-01|
+
+
+| Metric                  | Value |
+|-------------------------|-------|
+| ComparisonMonths_Count  | 0     |
+| Portf. DD > NQ + 20%    | 93    |
+
+
 ### Volatility Modelling and Risk Decomposition
 
 **Context:** Static volatility estimates mask the time-varying nature of market risk. GARCH (Generalized Autoregressive Conditional Heteroskedasticity) models capture volatility clustering—the empirical observation that large price movements tend to be followed by additional large movements.
