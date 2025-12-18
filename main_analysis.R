@@ -57,8 +57,8 @@
 #         sharpe_ratios_stocks_portfolio_nasdaq.csv
 #         portfolio_risk_decomposition.csv
 #
-# AUTHOR:   [Your Name]
-# DATE:     [Date]
+# AUTHOR:   Aurèle MARTCHOUK
+# DATE:     18/12/2025
 # VERSION:  1.0
 #
 ################################################################################
