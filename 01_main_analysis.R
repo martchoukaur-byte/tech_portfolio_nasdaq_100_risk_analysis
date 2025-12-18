@@ -23,43 +23,48 @@
 #   3. Monte Carlo VaR/ES (10,000 simulated paths, normal)
 #
 # ADVANCED EXTENSIONS
-#   - GARCH(1,1) conditional volatility for the portfolio
-#   - Copula-based tail dependence (Portfolio vs NASDAQ)
+#   - GARCH(1,1) conditional volatility (Portfolio & NASDAQ)
+#   - Copula-based tail dependence (Clayton copula, Portfolio vs NASDAQ)
 #   - Scenario-based stress testing (Tech Crash, Rate Shock)
-#   - Risk decomposition by stock (volatility contribution)
-#   - Sharpe ratios per stock, portfolio, and benchmark
+#   - Drawdown analysis & comparison (20% threshold analysis)
+#   - Zero drawdown periods & gap analysis
+#   - Individual stocks performance metrics
 #
 # OUTPUTS
 #   Console:
-#     - Descriptive statistics
-#     - VaR / ES for all methods
-#     - GARCH parameters & volatility summary
-#     - Copula dependence metrics
-#     - Stress scenario table
-#     - Risk decomposition & Sharpe table
+#     - Descriptive statistics (monthly & annualized)
+#     - VaR / ES for all three methods (95%, 99%)
+#     - GARCH(1,1) parameters & volatility summary
+#     - Copula dependence metrics (theta, lower tail dependence)
+#     - Stress scenario table (base, tech crash, rate shock)
+#     - Drawdown comparison analysis
+#     - Individual stock performance & Sharpe ratios
 #
-#   Files:
-#     - PNG:
-#         01_distributions_combined.png
-#         02_drawdown_comparison.png
-#         03_garch_portfolio_vol.png
-#         04_copula_portfolio_nasdaq.png
-#     - CSV:
-#         risk_metrics_summary.csv
-#         monthly_returns.csv
-#         drawdown_over_time.csv
-#         wealth_index.csv
-#         individual_stocks_performance.csv
-#         portfolio_vs_nasdaq_comparison.csv
-#         garch_portfolio_summary.csv
-#         copula_portfolio_nasdaq_summary.csv
-#         stress_scenarios_summary.csv
-#         sharpe_ratios_stocks_portfolio_nasdaq.csv
-#         portfolio_risk_decomposition.csv
+#   Files (PNG):
+#     - 01_distributions_combined.png
+#     - 02_drawdown_comparison.png
+#     - 03_garch_portfolio_nasdaq_vol.png
+#     - 04_copula_portfolio_nasdaq.png
+#
+#   Files (CSV):
+#     - risk_metrics_summary.csv
+#     - wealth_index.csv
+#     - individual_stocks_performance.csv
+#     - portfolio_vs_nasdaq_comparison.csv
+#     - garch_portfolio_nasdaq_summary.csv
+#     - copula_portfolio_nasdaq_summary.csv
+#     - stress_scenarios_summary.csv
+#     - sharpe_ratios_stocks_portfolio_nasdaq.csv
+#     - portfolio_risk_decomposition.csv
+#     - zero_drawdown_both_portfolio_nasdaq.csv
+#     - recovery_max_gap_comparison.csv
+#     - drawdown_nasdaq_worse_than_portfolio_20pct.csv
+#     - drawdown_portfolio_worse_than_nasdaq_20pct.csv
+#     - drawdown_comparison_summary.csv
 #
 # AUTHOR:   [Your Name]
 # DATE:     [Date]
-# VERSION:  1.0
+# VERSION:  2.0
 #
 ################################################################################
 
