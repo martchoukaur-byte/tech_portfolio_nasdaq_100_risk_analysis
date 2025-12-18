@@ -193,7 +193,7 @@ The following table consolidates risk statistics computed using three methodolog
 
 #### Figure 3: Time-Varying Portfolio Volatility (GARCH)
 
-![GARCH Volatility Dynamics](https://github.com/user-attachments/assets/0a374a1b-c208-4fa8-90a3-18d384d366c0)
+<img width="4200" height="2100" alt="image" src="https://github.com/user-attachments/assets/0009aa19-54d6-4622-9a11-59067befe046" />
 
 This chart displays the estimated conditional volatility (annualized) from the GARCH(1,1) model across all 312 months. Spikes correspond to known market stress events.
 
