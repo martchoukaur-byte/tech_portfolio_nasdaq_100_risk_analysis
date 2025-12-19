@@ -140,16 +140,16 @@ This visualization displays cumulative drawdowns from peak wealth for both the p
 
 Representative drawdown snapshots illustrating portfolio behavior across periods. Full time series available in `output/data/drawdown_over_time.csv`.
 
-| Date | Portfolio_Drawdown (%) | NASDAQ_Drawdown (%) |
-|------|------------------------|---------------------|
-| 1    | 0.00                   | 0.00                |
-| 10   | -33.02                 | -21.80              |
-| 22   | -66.88                 | -68.09              |
-| 34   | -72.24                 | -75.04              |
-| 96   | -8.01                  | -43.34              |
-| 150  | -10.60                 | -39.80              |
-| 274  | -33.27                 | -32.40              |
-| 312  | -3.50                  | -1.51               |
+| Date       | Portfolio_Drawdown (%) | NASDAQ_Drawdown (%) |
+|------------|------------------------|---------------------|
+| 1999-12-01 | 0.00                   | 0.00                |
+| 2000-09-01 | -33.02                 | -21.80              |
+| 2001-09-01 | -66.88                 | -68.09              |
+| 2002-09-01 | -72.24                 | -75.04              |
+| 2007-11-01 | -8.01                  | -43.34              |
+| 2012-05-01 | -10.60                 | -39.80              |
+| 2022-09-01 | -33.27                 | -32.40              |
+| 2025-11-01 | -3.50                  | -1.51               |
 
 **Key Observations:**
 - At date 34, the portfolio reaches maximum drawdown of -72.24% versus NASDAQ's -75.04%, a difference of 2.80 percentage points
