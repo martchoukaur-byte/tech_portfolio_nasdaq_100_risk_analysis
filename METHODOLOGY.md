@@ -104,16 +104,15 @@ Stress testing extends historical risk analysis by examining portfolio resilienc
 **Base Case (Historical):**
 - VaR/ES computed directly from the 312-month empirical distribution of portfolio returns
 
-**Scenario 1 – Tech Crash (Volatility × 1.5):**
-- Scale all monthly portfolio returns by 1.5, simulating a 50% increase in volatility
-- Calibrated to the volatility levels observed during the dot-com crash nadir (peak GARCH volatility ≈ 56.74%)
-- Recompute VaR/ES on this amplified distribution
-- Economic story: Pure tech sector panic, rapid deleveraging, sentiment collapse
+#### Scenario 1 – Tech Crash (Volatility × 1.5)
+*   **Method:** Scale all historical monthly returns by a factor of 1.5 (simulating a 50% increase in dispersion).
+*   **Calibration:** This shifts the portfolio's average annualized volatility to **~38%**. While below the absolute Dot-com peak (~56%), this level replicates a **high-volatility bear market**
+*   **Economic Story:** Pure tech sector panic, rapid deleveraging, and a structural collapse in sentiment leading to persistently wide price swings.
 
 **Scenario 2 – Rate Shock (Volatility × 1.3, Mean Return − 0.5%)**
-- Simulate new returns with reduced expected return (−0.5 percentage points per month) and elevated volatility (×1.3)
-- Captures the joint effect of higher interest rates (reducing the present value of future cash flows for growth stocks) and elevated market uncertainty
-- Economic story: Monetary tightening cycle, sustained pressure on valuations
+- **Simulate** new returns with reduced expected return (−0.5 percentage points per month) and elevated volatility (×1.3)
+- **Captures** the joint effect of higher interest rates (reducing the present value of future cash flows for growth stocks) and elevated market uncertainty
+- **Economic story:** Monetary tightening cycle, sustained pressure on valuations 
 
 These scenarios illustrate how tail risk metrics respond to deteriorating market conditions beyond historical experience, revealing capital adequacy requirements for risk management.
 
@@ -136,4 +135,5 @@ Using the covariance matrix of the five stocks and equal weights (20% each):
 - Express as a percentage of total portfolio volatility: RC_i / σ_p * 100%
 
 **Interpretation:** Risk contribution reveals which stocks drive portfolio volatility relative to their weights. If a stock has a 20% weight but contributes 25% of portfolio risk, it has a +5 percentage point risk premium. This analysis identifies whether high-risk holdings are justified (for instance by superior Sharpe ratios) or represent uncompensated risk drag.
+
 
