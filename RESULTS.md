@@ -93,7 +93,7 @@ This table ranks each holding by cumulative return and wealth multiple over the 
 
 #### Portfolio vs NASDAQ Performance Metrics
 
-Full comparison metrics are available in `output/data/portfolio_vs_nasdaq_comparison.csv` and `output/data/sharpe_ratios_stocks_portfolio_nasdaq.csv`.
+Full comparison metrics are available in `outcome/data/outcome_portfolio_vs_nasdaq_comparison.csv` and `output/data/sharpe_ratios_stocks_portfolio_nasdaq.csv`.
 
 | Metric                    | Portfolio | NASDAQ |
 |---------------------------|-----------|--------|
