@@ -1,8 +1,9 @@
-# Tech Portfolio Risk Analysis – VaR, ES, GARCH, Copula & Stress Testing
+# Tech Survivors Portfolio vs. NASDAQ-100: Long-Term Risk Analysis (1999-2025)
 
-This project builds a full market risk framework for an equal‑weighted technology equity portfolio versus the NASDAQ benchmark, using monthly data from November 1999 to November 2025.
 
-The goal is to show how a junior risk analyst can combine classical risk metrics (VaR/ES, drawdowns) with more advanced tools (GARCH volatility, copulas, stress testing, risk decomposition).
+This repository presents a comprehensive quantitative risk analysis comparing a concentrated, equal-weighted portfolio of five iconic technology pillars (MSFT, INTC, CSCO, ORCL, AAPL) against the NASDAQ-100 benchmark over a 26-year period (1999–2025).
+
+The project implements a solid market risk framework (VaR, GARCH, Copulas) to evaluate how a "Survivor Portfolio" of major tech leaders—who successfully navigated the Dot-com crash to define the modern era—compares to the diversified index in terms of structural risk, drawdown recovery, and tail dependence across multiple market regimes.
 
 ---
 
