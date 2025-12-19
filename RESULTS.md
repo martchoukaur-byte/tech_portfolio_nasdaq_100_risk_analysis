@@ -8,9 +8,10 @@ This natural experiment tests whether mechanical equal-weighting within mega-cap
 
 ## Research Question
 
-**How do the return and risk characteristics of an equal-weighted portfolio of five major technology stocks compare to the NASDAQ-100 benchmark over a 26-year period (1999–2025)?**
+## How do the return and risk characteristics of an equal-weighted portfolio of five major technology stocks compare to the NASDAQ-100 benchmark over a 26-year period (1999–2025)?**
 
-(Note: Throughout this report, references to "NASDAQ" or "the benchmark" refer specifically to the NASDAQ-100 Index, unless otherwise stated.)
+**(Note: Throughout this report, references to "NASDAQ" or "the benchmark" refer specifically to the NASDAQ-100 Index, unless otherwise stated.)**
+
 ---
 
 ## Methodology
