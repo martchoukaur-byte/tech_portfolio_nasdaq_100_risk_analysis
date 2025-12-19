@@ -21,40 +21,29 @@ Throughout this analysis, the risk-free rate (r_f) is assumed to be 0% for all r
 Given the aggressive growth nature of the technology sector, the annualized returns of both the Portfolio (~16%) and the NASDAQ-100 (~10%) vastly exceed historical risk-free rates (typically 0-5%). Consequently, subtracting r_f would simply shift the vertical axis without materially altering the relative ranking or the structural conclusions of the risk analysis. This approach provides a simplified, "gross return" perspective rather than a strictly comprehensive excess return analysis, serving as a robust estimation for comparative purposes.
 
 ### Value-at-Risk (VaR) and Expected Shortfall (ES) Methodologies
+
 To ensure robustness, we compute tail risk metrics using three distinct approaches. Comparing them reveals how "non-normal" the portfolio's returns truly are.
 
-### 1. Historical Simulation (Empirical)
+#### 1. Historical Simulation (Empirical)
+*   **Method:** Calculates quantiles directly from the 312 observed monthly returns.
+    *   VaR 95% = 5th percentile of actual history.
+    *   ES 95% = Average of all returns falling below the VaR threshold.
+*   **Pros:** Captures true "Fat Tail" events (e.g., Dot-com crash, 2008) without imposing a theoretical shape.
+*   **Cons:** Backward-looking; assumes the future will structurally resemble the past.
 
-**Method: Calculates quantiles directly from the 312 observed monthly returns.**
-
-**VaR 95% = 5th percentile of actual history.**
-
-**ES 95% = Average of all returns falling below the VaR threshold.**
-
-Pros: Captures true "Fat Tail" events (e.g., Dot-com crash, 2008) without imposing a theoretical shape.
-
-Cons: Backward-looking; assumes the future will structurally resemble the past.
-
-### 2. Parametric (Variance-Covariance)
-
-Method: Assumes returns follow a perfect Gaussian (Normal) distribution defined by the sample Mean ($\mu$) and Volatility ($\sigma$).
-
-Formula: $VaR_{95%} = \mu - 1.645\sigma$
-
-Pros: Standard analytical benchmark; easy to decompose.
-
-Cons: Structurally underestimates tail risk in equity markets because it ignores skewness and kurtosis (extreme crashes are more frequent in reality than in a Gaussian model).
-
-### 3. Monte Carlo Simulation
-
-Method: Generates 10,000 synthetic return scenarios based on the estimated $\mu$ and $\sigma$ parameters.
-
-Pros: Validates the parametric assumptions numerically; allows for convergence testing.
-
-Cons: Since the simulation engine here uses a Gaussian process, it will align closely with the Parametric method and share its tendency to underestimate extreme tail events compared to history.
+#### 2. Parametric (Variance-Covariance)
+*   **Method:** Assumes returns follow a perfect Gaussian (Normal) distribution defined by the sample Mean (μ) and Volatility (σ).
+    *   Formula: `VaR(95%) = μ - 1.645 * σ`
+*   **Pros:** Standard analytical benchmark; easy to decompose.
+*   **Cons:** Structurally **underestimates tail risk** in equity markets because it ignores skewness and kurtosis (extreme crashes are more frequent in reality than in a Gaussian model).
+  
+#### 3. Monte Carlo Simulation
+*   **Method:** Generates 10,000 synthetic return scenarios based on the estimated $\mu$ and $\sigma$ parameters.
+*   **Pros:** Validates the parametric assumptions numerically; allows for convergence testing.
+*   **Cons:** Since the simulation engine here uses a Gaussian process, it will align closely with the Parametric method and share its tendency to underestimate extreme tail events compared to history.
 
 **Interpretation of Divergence:**
-In our results, we expect the Historical VaR/ES to be significantly more severe (more negative) than the Parametric and Monte Carlo estimates. This gap quantifies the "Excess Kurtosis" or "Crash Risk Premium"—the portion of risk that standard normal models fail to capture.
+In our results, we expect the **Historical VaR/ES to be significantly more severe** (more negative) than the Parametric and Monte Carlo estimates. This gap quantifies the "Excess Kurtosis" or "Crash Risk Premium"—the portion of risk that standard normal models fail to capture.
 
 ### Drawdown Analysis
 
@@ -147,5 +136,6 @@ Using the covariance matrix of the five stocks and equal weights (20% each):
 - Express as a percentage of total portfolio volatility: RC_i / σ_p × 100%
 
 **Interpretation:** Risk contribution reveals which stocks drive portfolio volatility relative to their weights. If a stock has a 20% weight but contributes 25% of portfolio risk, it has a +5 percentage point risk premium. This analysis identifies whether high-risk holdings are justified by superior Sharpe ratios or represent uncompensated risk drag.
+
 
 
