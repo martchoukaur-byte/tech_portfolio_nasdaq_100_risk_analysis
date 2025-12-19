@@ -322,6 +322,7 @@ This table breaks down the contribution of each holding to overall portfolio ris
 **Analysis (Revised):**
 
 -**General Dependence**: The tight alignment along the diagonal confirms strong overall dependence across all market regimes (Correlation ~0.88).
+
 -**Tail Asymmetry**: While the relationship is strong everywhere, it appears visually denser in the bottom-left quadrant. This asymmetry confirms that the dependence "stiffens" during market downturns (Lower Tail Dependence), meaning the Portfolio and Benchmark are tightly coupled during crashes.
 
 #### Copula Summary Statistics
