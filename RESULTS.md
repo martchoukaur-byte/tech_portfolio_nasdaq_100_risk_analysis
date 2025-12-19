@@ -193,6 +193,8 @@ The following table consolidates risk statistics computed using three methodolog
 | Portfolio| 89             | 2000-03-01| 2007-08-01|
 | NASDAQ   | 177            | 2000-02-01| 2014-11-01|
 
+**Key Observations:**
+-Whereas 
 
 | Metric                  | Value |
 |-------------------------|-------|
@@ -226,7 +228,7 @@ Aggregate statistics from the GARCH(1,1) estimation for the portfolio. Detailed 
 - Portfolio's Mean annualized GARCH volatility stays above NASDAQ-100 Mean Garch Volatility which is constituant with unconditional volatility results
 - Portfolio's Mean monthly Minimum and Maximum GARCH volatility stay also superior to NASDAQ Garch volatility
 - For NASDAQ-100 and Portfolio, Peak volatility (56.74% and 52.83% annualized) corresponds to major market stress; minimum volatility (12.69% and 10.42% annualized) represents calm regimes
-- Volatility range of 44.05 percentage for Portfolio and  points demonstrates substantial regime shifts, with critical implications for static risk models
+- Volatility range of 44.05 percentage for Portfolio and 42.4043 percentage points for NASDAQ demonstrates substantial regime shifts, with critical implications for static risk models
 
 #### Portfolio Risk Decomposition by Asset
 
