@@ -31,7 +31,7 @@ This natural experiment tests whether mechanical equal-weighting within mega-cap
 
 #### Wealth Index Summary Table
 
-The table below presents select snapshots across the 312-month observation period to illustrate relative growth dynamics. The full time series is available in `output/data/wealth_index.csv`.
+The table below presents select snapshots across the 312-month observation period to illustrate relative growth dynamics. The full time series is available in `outcome/data/wealth_index.csv`.
 
 | Date       | Portfolio_Wealth_Index | NASDAQ_Wealth_Index |
 |------------|------------------------|---------------------|
@@ -48,7 +48,7 @@ The table below presents select snapshots across the 312-month observation perio
 
 #### Monthly Returns Summary Table
 
-This table shows sample monthly return observations spanning the analysis period. The full time series is available in `output/data/monthly_returns.csv`.
+This table shows sample monthly return observations spanning the analysis period. The full time series is available in `outcome/data/monthly_returns.csv`.
 
 | Date       | Portfolio_Return | NASDAQ_Return |
 |------------|------------------|---------------|
@@ -69,7 +69,7 @@ Monthly returns vary substantially across the period, with both portfolio and NA
 
 #### Individual Stock Performance Summary
 
-This table ranks each holding by cumulative return and wealth multiple over the 26-year period. Full details available in `output/data/individual_stocks_performance.csv`.
+This table ranks each holding by cumulative return and wealth multiple over the 26-year period. Full details available in `outcome/data/individual_stocks_performance.csv`.
 
 | Ticker | Cumulative Return (%) | Wealth Multiple |
 |--------|----------------------|-----------------|
@@ -93,7 +93,7 @@ This table ranks each holding by cumulative return and wealth multiple over the 
 
 #### Portfolio vs NASDAQ Performance Metrics
 
-Full comparison metrics are available in `outcome/data/outcome_portfolio_vs_nasdaq_comparison.csv` and `output/data/sharpe_ratios_stocks_portfolio_nasdaq.csv`.
+Full comparison metrics are available in `outcome/data/outcome_portfolio_vs_nasdaq_comparison.csv` and `outcome/data/sharpe_ratios_stocks_portfolio_nasdaq.csv`.
 
 | Metric                    | Portfolio | NASDAQ |
 |---------------------------|-----------|--------|
@@ -123,7 +123,7 @@ Detailed monthly and annualized statistics for individual holdings, portfolio, a
 - The portfolio's Sharpe ratio (0.634) exceeds the NASDAQ benchmark (0.453), indicating superior risk-adjusted returns
 - Despite higher monthly volatility (7.3% vs. 6.3%), the portfolio achieves better risk-adjusted performance
 - Individual stock Sharpe ratios range from 0.2521 (INTC) to 0.8121 (AAPL), reflecting disparate risk-return profiles
-- Porfolio's annuel volatility stands as lower as the volatility of each of its individual stocks. This is thanks to diversification. Nevertheless, the annual volatility of the Portfolio stands as higher compared to NASDAQ (because NADSAQ-100 is more diversified and less concentrated) 
+- Porfolio's annuel volatility stands as lower as the volatility of each of its individual stocks. This is thanks to diversification. Nevertheless, the annual volatility of the Portfolio stands as higher compared to NASDAQ (because NADSAQ-100 is more diversified and less concentrated)
 ---
 
 ### Risk and Drawdowns
@@ -138,7 +138,7 @@ This visualization displays cumulative drawdowns from peak wealth for both the p
 
 #### Drawdown Sample Observations
 
-Representative drawdown snapshots illustrating portfolio behavior across periods. Full time series available in `output/data/drawdown_over_time.csv`.
+Representative drawdown snapshots illustrating portfolio behavior across periods. Full time series available in `outcome/data/drawdown_over_time.csv`.
 
 | Date       | Portfolio_Drawdown (%) | NASDAQ_Drawdown (%) |
 |------------|------------------------|---------------------|
@@ -212,19 +212,21 @@ This chart displays the estimated conditional volatility (annualized) from the G
 
 #### GARCH Model Summary Statistics
 
-Aggregate statistics from the GARCH(1,1) estimation for the portfolio. Detailed time series available in `output/data/garch_portfolio_summary.csv`.
+Aggregate statistics from the GARCH(1,1) estimation for the portfolio. Detailed time series available in `outcome/data/garch_portfolio_summary.csv`.
 
-| Metric                      | Value   |
-|-----------------------------|---------|
-| Mean Sigma (monthly)        | 6.6478  |
-| Mean Sigma (annualized)     | 23.0287 |
-| Max Sigma (annualized)      | 56.7443 |
-| Min Sigma (annualized)      | 12.6894 |
+| Metric                  | Portfolio | NASDAQ |
+|-------------------------|-----------|--------|
+| Mean Sigma (monthly)    | 6.6478    | 5.7542 |
+| Mean Sigma (annualized) | 23.0287   | 19.9332|
+| Max Sigma (annualized)  | 56.7445   | 52.8275|
+| Min Sigma (annualized)  | 12.6891   | 10.4232|
 
 **GARCH Insights:**
-- Mean annualized GARCH volatility (23.03%) is slightly below unconditional volatility (25.29%), reflecting that extreme events occur during brief periods relative to calmer regimes
-- Peak volatility (56.74% annualized) corresponds to major market stress; minimum volatility (12.69% annualized) represents calm regimes
-- Volatility range of 44.05 percentage points demonstrates substantial regime shifts, with critical implications for static risk models
+- Mean annualized Portfolio's GARCH volatility (23.03%) is slightly below unconditional volatility (25.29%), reflecting that extreme events occur during brief periods relative to calmer regimes
+- Portfolio's Mean annualized GARCH volatility stays above NASDAQ-100 Mean Garch Volatility which is constituant with unconditional volatility results
+- Portfolio's Mean monthly Minimum and Maximum GARCH volatility stay also superior to NASDAQ Garch volatility
+- For NASDAQ-100 and Portfolio, Peak volatility (56.74% and 52.83% annualized) corresponds to major market stress; minimum volatility (12.69% and 10.42% annualized) represents calm regimes
+- Volatility range of 44.05 percentage for Portfolio and  points demonstrates substantial regime shifts, with critical implications for static risk models
 
 #### Portfolio Risk Decomposition by Asset
 
