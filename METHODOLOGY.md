@@ -14,6 +14,12 @@ For both the portfolio and the NASDAQ benchmark, we compute standard summary sta
 
 These metrics provide a first-order comparison of risk-adjusted performance between the portfolio and benchmark.
 
+### General Assumptions: Risk-Free Rate
+Throughout this analysis, the risk-free rate (r_f) is assumed to be 0% for all relevant calculations (including Sharpe Ratio and excess return metrics).
+
+**Justification:**
+Given the aggressive growth nature of the technology sector, the annualized returns of both the Portfolio (~16%) and the NASDAQ-100 (~10%) vastly exceed historical risk-free rates (typically 0-5%). Consequently, subtracting r_f would simply shift the vertical axis without materially altering the relative ranking or the structural conclusions of the risk analysis. This approach provides a simplified, "gross return" perspective rather than a strictly comprehensive excess return analysis, serving as a robust estimation for comparative purposes.
+
 ### Value-at-Risk (VaR) and Expected Shortfall (ES)
 
 VaR and ES quantify tail risk by estimating potential losses under adverse market conditions. Both metrics are computed at 95% and 99% confidence levels for a one-month horizon.
@@ -137,3 +143,4 @@ Using the covariance matrix of the five stocks and equal weights (20% each):
 - Express as a percentage of total portfolio volatility: RC_i / σ_p × 100%
 
 **Interpretation:** Risk contribution reveals which stocks drive portfolio volatility relative to their weights. If a stock has a 20% weight but contributes 25% of portfolio risk, it has a +5 percentage point risk premium. This analysis identifies whether high-risk holdings are justified by superior Sharpe ratios or represent uncompensated risk drag.
+
