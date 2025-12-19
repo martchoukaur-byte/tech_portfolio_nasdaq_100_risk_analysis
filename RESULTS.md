@@ -101,6 +101,17 @@ This table ranks each holding by cumulative return and wealth multiple over the 
 
 ![Portfolio vs NASDAQ Wealth Index](https://github.com/user-attachments/assets/7ca0a79e-6eec-4f8d-bc9b-14761c72521d)
 
+**Description:**
+This chart illustrates the historical drawdown profile for both the Equal-Weighted Portfolio (Blue) and the NASDAQ-100 Benchmark (Red). The vertical axis represents the percentage decline from the previous cumulative maximum wealth at each monthly observation. A value of 0% indicates the asset is at a new all-time high.
+
+**Analysis:**
+
+**Synchronized Collapse (2000–2002)**: The Dot-com crash resulted in nearly identical maximum drawdowns for both strategies, with the Portfolio reaching -72.24% and the Benchmark -75.04%, demonstrating high downside correlation during the initial burst.
+
+**Asymmetric Recovery Velocity (2003–2014)**: A significant structural divergence appears in the recovery phase. The Portfolio fully erased its losses and reclaimed its high-water mark by August 2007 (89 months). In stark contrast, the NASDAQ-100 remained in drawdown territory until November 2014 (177 months), highlighting the prolonged capital stagnation of the diversified index compared to the concentrated survivors.
+
+**Systemic Correlation (2022)**: During the 2022 tech correction, both series exhibit renewed synchronization, with drawdowns converging around -33%, reaffirming that concentration offers limited protection against sector-wide valuation compression.
+
 #### Portfolio vs NASDAQ Performance Metrics
 
 Full comparison metrics are available in `outcome/data/outcome_portfolio_vs_nasdaq_comparison.csv` and `outcome/data/sharpe_ratios_stocks_portfolio_nasdaq.csv`.
