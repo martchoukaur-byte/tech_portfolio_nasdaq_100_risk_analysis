@@ -51,7 +51,7 @@ Drawdowns measure the percentage loss from the previous peak wealth to the curre
 
 For each month, the cumulative wealth index is computed as the compounded product of 1 + monthly returns. The running maximum is then tracked, and drawdown at each date is defined as:
 
-Drawdown = (Current Wealth − Running Maximum) / Running Maximum × 100%
+Drawdown = (Current Wealth − Running Maximum) / Running Maximum (in percentage)
 
 Maximum drawdown over the entire period represents the worst peak-to-trough loss experienced. Drawdown analysis is valuable because it captures duration and severity of losses that point estimates of VaR/ES alone cannot fully convey.
 
@@ -133,9 +133,7 @@ Using the covariance matrix of the five stocks and equal weights (20% each):
 - For each stock i, compute its covariance with the portfolio: Cov(r_i, r_p)
 - Compute the marginal contribution to risk: β_i = Cov(r_i, r_p) / σ_p
 - Compute the risk contribution: RC_i = w_i · β_i
-- Express as a percentage of total portfolio volatility: RC_i / σ_p × 100%
+- Express as a percentage of total portfolio volatility: RC_i / σ_p * 100%
 
-**Interpretation:** Risk contribution reveals which stocks drive portfolio volatility relative to their weights. If a stock has a 20% weight but contributes 25% of portfolio risk, it has a +5 percentage point risk premium. This analysis identifies whether high-risk holdings are justified by superior Sharpe ratios or represent uncompensated risk drag.
-
-
+**Interpretation:** Risk contribution reveals which stocks drive portfolio volatility relative to their weights. If a stock has a 20% weight but contributes 25% of portfolio risk, it has a +5 percentage point risk premium. This analysis identifies whether high-risk holdings are justified (for instance by superior Sharpe ratios) or represent uncompensated risk drag.
 
