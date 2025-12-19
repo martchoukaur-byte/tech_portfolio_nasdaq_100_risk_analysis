@@ -50,14 +50,14 @@ The table below presents select snapshots across the 312-month observation perio
 
 This table shows sample monthly return observations spanning the analysis period. The full time series is available in `output/data/monthly_returns.csv`.
 
-| Date | Portfolio_Return | NASDAQ_Return |
-|------|------------------|----------------|
-| 104  | -2.2416          | 1.4204         |
-| 160  | 0.9942           | 3.3963         |
-| 200  | 6.5474           | 6.5968         |
-| 240  | 3.0576           | 4.4994         |
-| 280  | 14.9690          | 6.6900         |
-| 312  | -3.5024          | -1.5143        |
+| Date       | Portfolio_Return | NASDAQ_Return |
+|------------|------------------|---------------|
+| 2008-07-01 | -2.2416          | 1.4204        |
+| 2013-03-01 | 0.9942           | 3.3963        |
+| 2016-07-01 | 6.5474           | 6.5968        |
+| 2019-11-01 | 3.0576           | 4.4994        |
+| 2023-03-01 | 14.9690          | 6.6900        |
+| 2025-11-01 | -3.5024          | -1.5143       |
 
 Monthly returns vary substantially across the period, with both portfolio and NASDAQ experiencing positive and negative returns
 
