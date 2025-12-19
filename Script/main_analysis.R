@@ -62,8 +62,8 @@
 #     - drawdown_portfolio_worse_than_nasdaq_20pct.csv
 #     - drawdown_comparison_summary.csv
 #
-# AUTHOR:   [Your Name]
-# DATE:     [Date]
+# AUTHOR:   Aurèle MARTCHOUK
+# DATE:     19/12/2025
 # VERSION:  2.0
 #
 ################################################################################
