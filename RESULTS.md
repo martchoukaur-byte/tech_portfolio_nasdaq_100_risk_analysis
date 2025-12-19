@@ -33,14 +33,14 @@ This natural experiment tests whether mechanical equal-weighting within mega-cap
 
 The table below presents select snapshots across the 312-month observation period to illustrate relative growth dynamics. The full time series is available in `output/data/wealth_index.csv`.
 
-| Date | Portfolio_Wealth_Index | NASDAQ_Wealth_Index |
-|------|------------------------|---------------------|
-| 104  | 1.6683                 | 0.6971              |
-| 160  | 2.5818                 | 0.9794              |
-| 200  | 4.5696                 | 1.5473              |
-| 240  | 9.5580                 | 2.5974              |
-| 280  | 14.9362                | 3.6635              |
-| 312  | 27.4905                | 7.0038              |
+| Date       | Portfolio_Wealth_Index | NASDAQ_Wealth_Index |
+|------------|------------------------|---------------------|
+| 2008-07-01 | 1.6683                 | 0.6971              |
+| 2013-03-01 | 2.5818                 | 0.9794              |
+| 2016-07-01 | 4.5696                 | 1.5473              |
+| 2019-11-01 | 9.5580                 | 2.5974              |
+| 2023-03-01 | 14.9362                | 3.6635              |
+| 2025-11-01 | 27.4905                | 7.0038              |
 
 **Key Points:**
 - The Wealth Index does not account for inflation or transaction costs; it reflects only the nominal evolution of wealth
