@@ -261,7 +261,16 @@ This result highlights a specific nuance in risk definition:
 
 <img width="4200" height="2100" alt="image" src="https://github.com/user-attachments/assets/0009aa19-54d6-4622-9a11-59067befe046" />
 
-This chart displays the estimated conditional volatility (annualized) from the GARCH(1,1) model across all 312 months. Spikes correspond to known market stress events.
+**Description:**
+This chart displays the annualized conditional volatility for both the Portfolio (Blue) and the NASDAQ (Red) over the 26-year period, as estimated by a GARCH(1,1) model. Unlike static metrics, this visualization captures how market risk intensity fluctuates over time.
+
+**Analysis:**
+
+**Regime Dependency:** Risk is highly dynamic. We observe extreme volatility clusters (>50%) during the Dot-com crash (2000-2002) and significant spikes during the 2008 Financial Crisis and 2020 COVID-19 onset.
+
+**Structural Premium:** The Portfolio (Blue) consistently exhibits a "volatility premium" over the NASDAQ (Red), trading slightly above the benchmark's risk curve in almost all market conditions. This quantifies the exact cost of concentration: a persistent, structural increase in volatility (typically +2 to +5 points) regardless of the market regime.
+
+**Synchronization:** The peaks and troughs are perfectly aligned, confirming that while the Portfolio is riskier in magnitude, it is structurally driven by the same systemic shocks as the broader index.
 
 #### GARCH Model Summary Statistics
 
