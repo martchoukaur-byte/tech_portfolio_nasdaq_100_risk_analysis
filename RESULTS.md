@@ -187,19 +187,30 @@ The following table consolidates risk statistics computed using three methodolog
 - Historical ES and VaR are more severe than parametric/Monte Carlo ES and VaR, indicating empirical returns exhibit fatter tails than normal distribution assumptions
 ---
 
+## Drawdown Duration Analysis: The Concentration Paradox
+
+A critical insight from this analysis is the significant difference in recovery times between the concentrated Tech Portfolio and the diversified NASDAQ-100 index, particularly following the Dot-com crash.
 
 | Asset    | Max_Gap_Months | Date_Start | Date_End   |
 |----------|----------------|-----------|-----------|
 | Portfolio| 89             | 2000-03-01| 2007-08-01|
 | NASDAQ   | 177            | 2000-02-01| 2014-11-01|
 
-**Key Observations:**
--Whereas 
 
-| Metric                  | Value |
-|-------------------------|-------|
-| ComparisonMonths_Count  | 0     |
-| Portf. DD > NQ + 20%    | 93    |
+### Key Findings
+Despite being significantly more concentrated (only 5 assets) and exhibiting higher annualized volatility and **risk metrics** in general compared to the benchmark, the Tech Portfolio demonstrated a **much faster recovery capability**:
+
+*   **Portfolio Recovery:** It took **89 months** (~7.5 years) for the portfolio to fully recover its peak value after the Dot-com bubble burst.
+*   **NASDAQ-100 Recovery:** The index required **177 months** (~14.8 years) to return to its pre-crash highs, only fully recovering well after the 2008 financial crisis had passed.
+
+### Interpretation
+This disparity highlights a nuanced aspect of risk in concentrated portfolios:
+1.  **Quality over Quantity:** The NASDAQ-100's prolonged recovery was dragged down by the sheer volume of "dot-com" components that went bankrupt or lost >90% of their value and never recovered. The index had to wait for new growth cycles to offset these dead weights.
+2.  **"Winner Takes All" Dynamics:** The selected portfolio consists of companies that eventually dominated the tech sector. Their individual growth trajectories post-2002 were steep enough to erase drawdown losses twice as fast as the broader index.
+
+**Important Caveat (Survivorship Bias):**
+This superior performance is partly attributable to **survivorship bias**. The portfolio was constructed using hindsight knowledge of today's tech giants. An investor in 2000 constructing a similarly concentrated portfolio might have chosen companies that did not survive (e.g., Cisco, Intel, or defunct .coms), which would have resulted in a permanent loss of capital rather than a faster recovery.
+
 
 
 ### Volatility Modelling and Risk Decomposition
