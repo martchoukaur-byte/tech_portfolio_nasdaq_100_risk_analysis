@@ -12,6 +12,7 @@ The conventional wisdom in portfolio management advocates for diversification to
 **-Oracle (ORCL): A major force in Enterprise Database management.**
 
 **-Apple (AAPL): An iconic innovator in Consumer Hardware and personal computing.**
+
 This natural experiment serves as a longitudinal analysis of "Quality" tech survivorship. It tests how a concentrated portfolio of eventual market leaders compares to the diversified NASDAQ-100 benchmark across extreme market regimes (the Dot-com crash, the 2008 Financial Crisis, and the post-COVID era), specifically looking at structural risk, drawdown recovery, and tail dependence.
 
 **Research Question:**
