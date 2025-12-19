@@ -1,19 +1,19 @@
 # Equal-Weight Technology Portfolio vs. NASDAQ: A 26-Year Risk and Performance Analysis
 
-The conventional wisdom in portfolio management advocates for diversification to mitigate idiosyncratic risk. However, the history of the technology sector is also defined by a "winner-takes-all" dynamics. This analysis examines a straightforward question: what if you had constructed a portfolio of five iconic technology pillars just before the Dot-com bubble burst in November 1999, equal-weighted them at 20% each, and rebalanced monthly for 26 years?
+The conventional wisdom in portfolio management advocates for diversification to mitigate idiosyncratic risk. However, the history of the technology sector is also defined by a "winner-takes-all" dynamics. **This analysis examines a straightforward question: what if you had constructed a portfolio of five iconic technology pillars just before the Dot-com bubble burst in November 1999, equal-weighted them at 20% each, and rebalanced monthly for 26 years?**
 
-The selection covers the foundational layers of the tech ecosystem as it stood at the turn of the millennium:
+**The selection covers the foundational layers of the tech ecosystem as it stood at the turn of the millennium:
 -Microsoft (MSFT): A global leader in PC Software and Operating Systems.
 -Intel (INTC): A dominant player in the Semiconductor industry ("Wintel" era).
 -Cisco (CSCO): A key provider of Internet Networking infrastructure.
 -Oracle (ORCL): A major force in Enterprise Database management.
--Apple (AAPL): An iconic innovator in Consumer Hardware and personal computing.
+-Apple (AAPL): An iconic innovator in Consumer Hardware and personal computing.**
 This natural experiment serves as a longitudinal analysis of "Quality" tech survivorship. It tests how a concentrated portfolio of eventual market leaders compares to the diversified NASDAQ-100 benchmark across extreme market regimes (the Dot-com crash, the 2008 Financial Crisis, and the post-COVID era), specifically looking at structural risk, drawdown recovery, and tail dependence.
 
-**Research Question**
+**Research Question:**
 How do the risk-return profile and recovery dynamics of an equal-weighted portfolio of five major technology survivors compare to the diversified NASDAQ-100 benchmark over a 26-year multi-cycle period (1999–2025)?
 
-(Note: Throughout this report, references to "NASDAQ" or "the benchmark" refer specifically to the NASDAQ-100 Index, unless otherwise stated.)
+**(Note: Throughout this report, references to "NASDAQ" or "the benchmark" refer specifically to the NASDAQ-100 Index, unless otherwise stated.)**
 
 ---
 
