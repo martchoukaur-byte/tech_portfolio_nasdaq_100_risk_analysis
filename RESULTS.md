@@ -101,6 +101,9 @@ This table ranks each holding by cumulative return and wealth multiple over the 
 
 ![Portfolio vs NASDAQ Wealth Index](https://github.com/user-attachments/assets/7ca0a79e-6eec-4f8d-bc9b-14761c72521d)
 
+**Description:**
+Histograms displaying the frequency of monthly returns for the Portfolio (Left) and NASDAQ (Right). Vertical lines mark key downside risk thresholds (VaR and ES at 95% and 99% confidence levels)
+
 #### Portfolio vs NASDAQ Performance Metrics
 
 Full comparison metrics are available in `outcome/data/outcome_portfolio_vs_nasdaq_comparison.csv` and `outcome/data/sharpe_ratios_stocks_portfolio_nasdaq.csv`.
