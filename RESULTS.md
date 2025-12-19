@@ -8,8 +8,9 @@ This natural experiment tests whether mechanical equal-weighting within mega-cap
 
 ## Research Question
 
-**Does an equal-weighted portfolio of the five largest technology stocks (as of November 1999) with monthly rebalancing outperform the NASDAQ-100 benchmark over 26 years? What are the risk and performance characteristics of each?**
+**How do the return and risk characteristics of an equal-weighted portfolio of five major technology stocks compare to the NASDAQ-100 benchmark over a 26-year period (1999–2025)?**
 
+(Note: Throughout this report, references to "NASDAQ" or "the benchmark" refer specifically to the NASDAQ-100 Index, unless otherwise stated.)
 ---
 
 ## Methodology
