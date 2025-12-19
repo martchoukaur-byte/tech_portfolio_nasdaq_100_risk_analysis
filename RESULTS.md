@@ -211,26 +211,25 @@ This disparity highlights a nuanced aspect of risk in concentrated portfolios:
 **Important Caveat (Survivorship Bias):**
 This superior performance is partly attributable to **survivorship bias**. The portfolio was constructed using hindsight knowledge of today's tech giants. An investor in 2000 constructing a similarly concentrated portfolio might have chosen companies that did not survive (e.g., Cisco, Intel, or defunct .coms), which would have resulted in a permanent loss of capital rather than a faster recovery.
 
-### Drawdown Resilience: The "20% Buffer" Phenomenon
+### Drawdown Resilience: The "20% Buffer" Asymmetry
 
-A deeper analysis of relative drawdown reveals a striking asymmetry in capital preservation between the concentrated Portfolio and the NASDAQ-100 benchmark.
+A deeper analysis of relative drawdown reveals a striking asymmetry in how each asset relates to its own historical peak.
 
 | Metric | Portfolio Superiority Count | NASDAQ Superiority Count |
 | :--- | :---: | :---: |
 | **Months with >20% Drawdown Gap** | **93** | **0** |
 
 #### Key Insights
-1.  **Significant Outperformance Frequency:** For **93 months** (nearly 8 years cumulatively), the Portfolio's drawdown was significantly "better" (closer to 0) than the NASDAQ's by a margin of at least 20 percentage points. This indicates that during deep bear markets (post-2000 and 2008), the Portfolio held its value relative to its previous peak much better than the index.
+1.  **Prolonged Drawdown Advantage:** For **93 months** (nearly 8 years cumulatively), the Portfolio's drawdown was significantly "better" (closer to 0) than the NASDAQ's by a margin of at least 20 percentage points. This means the Portfolio spent long periods much closer to its all-time highs than the index did.
     
-2.  **Zero Cases of Benchmark Dominance:** Conversely, there was **not a single month** in the entire dataset where the NASDAQ's drawdown was 20% better than the Portfolio's. The benchmark never offered a "safety buffer" of this magnitude compared to the concentrated strategy.
+2.  **Benchmark Limitation:** Conversely, there was **not a single month** in the entire dataset where the NASDAQ's drawdown was 20% better than the Portfolio's. The index never provided a comparable "recovery advantage" over the concentrated strategy.
 
-#### Paradox Conclusion
-This creates a compelling risk paradox:
-*   The Portfolio is **more volatile** (higher Sigma) and **more concentrated** (higher idiosyncratic risk).
-*   Yet, from a **drawdown perspective**, it acts as a "safer" asset class during extreme crises. 
+#### The Volatility vs. Recovery Paradox
+This result highlights a specific nuance in risk definition:
+*   **Volatility:** The NASDAQ is technically "safer" day-to-day (lower Annualized Sigma: 19.9% vs 23.0%).
+*   **Drawdown:** The Portfolio is "safer" in terms of **capital recovery**. It spends significantly less time in deep distress relative to its peaks.
 
-This suggests that the specific selection of tech giants ("Quality Factor") provided a floor to losses that the broader, indiscriminate NASDAQ-100 index lacked, particularly due to the weight of failing components in the index during the 2000-2014 recovery period.
-
+**Conclusion:** While the Portfolio prices fluctuate more violently in the short term, its structural ability to recover and reclaim highs is vastly superior to the broader index, which can languish in deep drawdown territory for over a decade (as seen in the 2000-2014 period). **This result is consistant with the Portfolio's higher volatility combined with higher Sharpe Ratio**
 
 ### Volatility Modelling and Risk Decomposition
 
@@ -340,10 +339,25 @@ Projected portfolio risk metrics under three scenarios. Full details available i
 
 ## Summary of Key Findings
 
-This results section demonstrates:
+### Summary of Key Findings
+This comprehensive analysis over a 26-year period (1999-2025) provides robust evidence challenging conventional diversification wisdom within the technology sector:
 
-✓ Robust performance measurement across 26 years and multiple market regimes  
-✓ Comprehensive risk quantification using three independent VaR methodologies  
-✓ Dynamic volatility modeling capturing time-varying market conditions  
-✓ Tail risk characterization through copula analysis and stress testing  
-✓ Risk decomposition identifying individual asset contributions to portfolio volatility
+**1. Superior Risk-Adjusted Returns**
+The concentrated equal-weight portfolio significantly outperformed the NASDAQ-100 benchmark, delivering a 16.04% annualized return compared to 9.95%, resulting in a final wealth multiple of 27.49x vs 7.00x. Despite higher volatility (25.29% vs 21.95%), the portfolio achieved a superior Sharpe Ratio (0.63 vs 0.45), proving that concentrated exposure to high-quality tech leaders compensated for the additional risk.
+
+**2. The "Drawdown Paradox"**
+A critical discovery is the portfolio's resilience during recovery phases. While technically more volatile, the portfolio recovered from the Dot-com crash twice as fast as the index (89 months vs 177 months). Furthermore, it maintained a "20% drawdown buffer" advantage for 93 months, meaning it spent significantly less time in deep distress relative to its peaks compared to the NASDAQ-100, which was weighed down by failing components.
+
+**3. Asymmetric Risk Profile**
+Copula analysis reveals an extreme tail dependence (85.58%) between the portfolio and the benchmark during market crashes. This confirms that while the portfolio offers superior upside and faster recovery, it provides no diversification benefit during systemic shocks—when the NASDAQ crashes, this portfolio crashes in lockstep.
+
+**4. Dynamic Risk Reality**
+Static metrics mask the true nature of risk. GARCH modeling shows portfolio volatility fluctuating between 12.7% (calm) and 56.7% (crisis), proving that risk is highly regime-dependent. Stress testing further reveals that in a "Tech Crash" scenario (1.5x volatility), potential tail losses (ES 95%) would surge to -23%, significantly beyond the historical average of -15%.
+
+### This results section demonstrates:
+
+✓ Robust Performance Measurement: Validated across 312 months, covering three major global crises (Dot-com, 2008, COVID-19).
+✓ Nuanced Risk Assessment: Beyond volatility, the analysis uncovers the "recovery speed" advantage of concentration via drawdown duration metrics.
+✓ Tail Risk Quantification: Application of Clayton Copula and extreme value theory to measure the specific risk of joint systemic failure (85% probability).
+✓ Dynamic Stress Testing: Forward-looking scenarios (cf Stress Tests) that prepare for market regimes more severe than the historical average.
+✓ Attribution Clarity: Risk decomposition identifies exactly how individual components (like INTC's drag vs AAPL's drive) shape the aggregate portfolio profile.
