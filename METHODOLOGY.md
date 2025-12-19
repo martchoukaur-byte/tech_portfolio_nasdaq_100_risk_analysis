@@ -20,37 +20,41 @@ Throughout this analysis, the risk-free rate (r_f) is assumed to be 0% for all r
 **Justification:**
 Given the aggressive growth nature of the technology sector, the annualized returns of both the Portfolio (~16%) and the NASDAQ-100 (~10%) vastly exceed historical risk-free rates (typically 0-5%). Consequently, subtracting r_f would simply shift the vertical axis without materially altering the relative ranking or the structural conclusions of the risk analysis. This approach provides a simplified, "gross return" perspective rather than a strictly comprehensive excess return analysis, serving as a robust estimation for comparative purposes.
 
-### Value-at-Risk (VaR) and Expected Shortfall (ES)
+### Value-at-Risk (VaR) and Expected Shortfall (ES) Methodologies
+To ensure robustness, we compute tail risk metrics using three distinct approaches. Comparing them reveals how "non-normal" the portfolio's returns truly are.
 
-VaR and ES quantify tail risk by estimating potential losses under adverse market conditions. Both metrics are computed at 95% and 99% confidence levels for a one-month horizon.
+### 1. Historical Simulation (Empirical)
 
-**VaR (Value-at-Risk):** The maximum loss expected with a given confidence level. VaR 95% means there is a 95% probability that losses will not exceed this threshold (or equivalently, a 5% probability of worse losses).
+**Method: Calculates quantiles directly from the 312 observed monthly returns.**
 
-**ES (Expected Shortfall):** The average loss conditional on exceeding the VaR threshold. ES is more conservative than VaR because it accounts for the severity of losses beyond the VaR cutoff, rather than just the cutoff itself.
+**VaR 95% = 5th percentile of actual history.**
 
-Three independent methodologies are employed:
+**ES 95% = Average of all returns falling below the VaR threshold.**
 
-**1. Historical Simulation**
-- Non-parametric approach using empirical quantiles of historical returns
-- VaR 95% is the 5th percentile; VaR 99% is the 1st percentile of the observed return distribution
-- ES is computed as the average of all returns worse than (i.e., below) the VaR threshold
-- Advantage: Makes no distributional assumptions; captures actual market behavior
-- Disadvantage: Relies on historical data; assumes the past distribution represents future risk
+Pros: Captures true "Fat Tail" events (e.g., Dot-com crash, 2008) without imposing a theoretical shape.
 
-**2. Parametric (Normal Distribution)**
-- Assumes returns follow a normal distribution with mean μ and standard deviation σ
-- VaR 95% = μ − 1.645·σ; VaR 99% = μ − 2.326·σ (where 1.645 and 2.326 are standard normal quantiles)
-- ES is computed using the closed-form formula under normality
-- Advantage: Simple, requires only mean and volatility; computationally efficient
-- Disadvantage: Assumes normality, which often fails in practice (equity returns exhibit fatter tails)
+Cons: Backward-looking; assumes the future will structurally resemble the past.
 
-**3. Monte Carlo Simulation**
-- Generate 10,000 simulated monthly returns from Normal(μ, σ)
-- Compute empirical VaR/ES directly from the simulated distribution
-- Advantage: Flexible; can incorporate complex distributions or correlations
-- Disadvantage: Computationally intensive; results depend on the assumed distribution
+### 2. Parametric (Variance-Covariance)
 
-These three approaches provide complementary perspectives: historical simulation is data-driven, parametric is theoretically tractable, and Monte Carlo bridges both. Divergence between them signals that distributional assumptions may be inadequate.
+Method: Assumes returns follow a perfect Gaussian (Normal) distribution defined by the sample Mean ($\mu$) and Volatility ($\sigma$).
+
+Formula: $VaR_{95%} = \mu - 1.645\sigma$
+
+Pros: Standard analytical benchmark; easy to decompose.
+
+Cons: Structurally underestimates tail risk in equity markets because it ignores skewness and kurtosis (extreme crashes are more frequent in reality than in a Gaussian model).
+
+### 3. Monte Carlo Simulation
+
+Method: Generates 10,000 synthetic return scenarios based on the estimated $\mu$ and $\sigma$ parameters.
+
+Pros: Validates the parametric assumptions numerically; allows for convergence testing.
+
+Cons: Since the simulation engine here uses a Gaussian process, it will align closely with the Parametric method and share its tendency to underestimate extreme tail events compared to history.
+
+**Interpretation of Divergence:**
+In our results, we expect the Historical VaR/ES to be significantly more severe (more negative) than the Parametric and Monte Carlo estimates. This gap quantifies the "Excess Kurtosis" or "Crash Risk Premium"—the portion of risk that standard normal models fail to capture.
 
 ### Drawdown Analysis
 
@@ -143,4 +147,5 @@ Using the covariance matrix of the five stocks and equal weights (20% each):
 - Express as a percentage of total portfolio volatility: RC_i / σ_p × 100%
 
 **Interpretation:** Risk contribution reveals which stocks drive portfolio volatility relative to their weights. If a stock has a 20% weight but contributes 25% of portfolio risk, it has a +5 percentage point risk premium. This analysis identifies whether high-risk holdings are justified by superior Sharpe ratios or represent uncompensated risk drag.
+
 
